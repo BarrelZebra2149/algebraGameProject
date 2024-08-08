@@ -8,15 +8,18 @@
         .pumping-text {
             font-size: 2em;
             color: white;
-            animation: pump 677.96610169ms infinite cubic-bezier(.02,.69,.24,.99);
+            animation: pump 677.96610169ms infinite cubic-bezier(0,.92,1,.14);
         }
 
         @keyframes pump {
-            0%, 100% {
-                transform: scale(0.8);
+            0% {
+                transform: scale(0.8) rotate(-10deg);
             }
             50% {
-                transform: scale(1);
+                transform: scale(1) rotate(0deg);
+            }
+            100% {
+                transform: scale(0.8) rotate(0deg);
             }
         }
 
